@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f1c2e;      /* темно-синий фон */
+  color: #0b1a2b;
+}
+
+main {
+  padding: 10px 0 30px;
+}
+
+/* Шапка */
+header {
+  background: #16263f;
+  color: white;
+  text-align: center;
+  padding: 40px;
+}
+
+/* Секции */
+section {
+  background: #ffffff;
+  margin: 18px auto;
+  padding: 24px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 12px;
+  border: 1px solid #d9e2ef;
+}
+
+p, li {
+  color: #0b1a2b;
+}
+
+
+/* Заголовки */
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  color: #13294b;
+}
+
+img {
+  display: block;
+  margin: 12px 0 16px;
+  border-radius: 10px;
+  border: 1px solid #d9e2ef;
+  max-width: 180px
+}
+
+article {
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #f7f9fc;
+}
+
+article h3 {
+  margin-top: 0;
+  color: #13294b;
+}
+
+section img {
+  float: left;
+  margin: 0 18px 12px 0;
+  max-width: 180px;
+  border-radius: 10px;
+  border: 1px solid #d9e2ef;
+}
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
