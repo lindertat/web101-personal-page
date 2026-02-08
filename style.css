@@ -1,7 +1,8 @@
+/* ===== Base ===== */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: #0f1c2e;      /* темно-синий фон */
+  background: #0f1c2e;
   color: #0b1a2b;
 }
 
@@ -9,15 +10,41 @@ main {
   padding: 10px 0 30px;
 }
 
-/* Шапка */
+/* ===== Header ===== */
 header {
   background: #16263f;
-  color: white;
+  color: #ffffff;
   text-align: center;
   padding: 40px;
+  border-bottom: 1px solid #243a5c;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-/* Секции */
+header h1 {
+  margin: 0;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  margin-top: 8px;
+  color: #dbe6f5;
+  opacity: 0.9;
+}
+
+/* ===== Headings ===== */
+h2 {
+  margin: 0 0 12px;
+  color: #13294b;
+}
+
+/* ===== Text ===== */
+p,
+li {
+  color: #0b1a2b;
+  line-height: 1.5;
+}
+
+/* ===== Sections ===== */
 section {
   background: #ffffff;
   margin: 18px auto;
@@ -28,52 +55,46 @@ section {
   border: 1px solid #d9e2ef;
 }
 
-p, li {
-  color: #0b1a2b;
-}
-
-
-/* Заголовки */
-h1 {
-  margin: 0;
-}
-
-h2 {
-  margin-top: 0;
-  color: #13294b;
-}
-
-img {
-  display: block;
-  margin: 12px 0 16px;
-  border-radius: 10px;
-  border: 1px solid #d9e2ef;
-  max-width: 180px
-}
-
-article {
-  border: 1px solid #d9e2ef;
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 14px;
-  background: #f7f9fc;
-}
-
-article h3 {
-  margin-top: 0;
-  color: #13294b;
-}
-
+/* ===== About image layout ===== */
 section img {
   float: left;
   margin: 0 18px 12px 0;
   max-width: 180px;
   border-radius: 10px;
   border: 1px solid #d9e2ef;
+  display: block;
 }
 
+/* Clear float */
 section::after {
   content: "";
   display: block;
   clear: both;
+}
+
+/* ===== Project cards ===== */
+article {
+  border: 1px solid #d9e2ef;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 14px;
+  background: #f7f9fc;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+article:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+article h3 {
+  margin: 0 0 8px;
+  color: #13294b;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  color: #c7d3e6;
+  padding: 20px 0 30px;
 }
